@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SceneRecon.iml" filepath="$PROJECT_DIR$/SceneRecon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SceneReconProject.iml" filepath="$PROJECT_DIR$/SceneReconProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

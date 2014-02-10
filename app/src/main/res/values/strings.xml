@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scene Recon</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sensor_list">Available Sensors: %s</string>
+    <string name="world_axis_title">World axis:</string>
+    <string name="x_axis_rotation">X axis rotation in degrees: %s</string>
+    <string name="y_axis_rotation">Y axis rotation in degrees: %s</string>
+    <string name="z_axis_rotation">Z axis rotation in degrees: %s</string>
+    <string name="phone_axis_title">\nPhone axis</string>
+
+</resources>

@@ -11,6 +11,6 @@ public class SensorTestActivity extends SingleFragmentActivity {
 
     @Override
     Fragment createFragment() {
-        return new SensorTestFragment(getApplicationContext());
+        return new SensorTestFragment();
     }
 }

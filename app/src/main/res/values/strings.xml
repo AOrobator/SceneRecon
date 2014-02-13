@@ -7,5 +7,6 @@
     <string name="x_axis_gravity">Acceleration due to gravity in the x-axis : %s m/s^2 \n</string>
     <string name="y_axis_gravity">Acceleration due to gravity in the y-axis : %s m/s^2 \n</string>
     <string name="z_axis_gravity">Acceleration due to gravity in the z-axis : %s m/s^2 \n</string>
+    <string name="x_axis_gravity_offset">You are %s degrees off of the horizontal</string>
 
 </resources>

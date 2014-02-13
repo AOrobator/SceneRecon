@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><resources>    <declare-styleable name="HorizontalOffsetView">        <attr name="background_color" format="color"/>        <attr name="base_line_color" format="color"/>        <attr name="indicator_color_aligned" format="color"/>        <attr name="indicator_color_unaligned" format="color"/>    </declare-styleable></resources>

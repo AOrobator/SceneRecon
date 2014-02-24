@@ -3,10 +3,13 @@
 
     <string name="app_name">Scene Recon</string>
     <string name="action_settings">Settings</string>
-
     <string name="x_axis_gravity">Acceleration due to gravity in the x-axis : %s m/s^2 \n</string>
     <string name="y_axis_gravity">Acceleration due to gravity in the y-axis : %s m/s^2 \n</string>
     <string name="z_axis_gravity">Acceleration due to gravity in the z-axis : %s m/s^2 \n</string>
     <string name="x_axis_gravity_offset">You are %s degrees off of the horizontal</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="title_activity_scene_recon_camera">SceneReconCameraActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_setup">SetupActivity</string>
 
 </resources>

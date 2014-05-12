@@ -7,6 +7,9 @@ import android.view.WindowManager;
 
 import com.orobator.android.scenerecon.view.fragments.SceneReconCameraFragment;
 
+/**
+ * SceneReconCameraActivity is the Activity that holds the main view fragment
+ */
 public class SceneReconCameraActivity extends SingleFragmentActivity {
 
     @Override

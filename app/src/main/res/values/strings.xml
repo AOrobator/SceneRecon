@@ -9,7 +9,8 @@
     <string name="x_axis_gravity_offset">You are %s degrees off of the horizontal</string>
     <string name="take_picture">Take Picture</string>
     <string name="title_activity_scene_recon_camera">SceneReconCameraActivity</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_setup">SetupActivity</string>
+    <string name="title_activity_hello_open_cv">HelloOpenCvActivity</string>
+    <string name="capture_scene">Capture Scene</string>
 
 </resources>

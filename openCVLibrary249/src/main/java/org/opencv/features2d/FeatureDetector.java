@@ -47,7 +47,6 @@ import java.util.List;
  * @see <a href="http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#featuredetector">org.opencv.features2d.FeatureDetector : public Algorithm</a>
  */
 public class FeatureDetector {
-
     public static final int
             FAST = 1,
             STAR = 2,

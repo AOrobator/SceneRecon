@@ -22,7 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Imgproc {
-
     public static final int
             CV_BLUR_NO_SCALE = 0,
             CV_BLUR = 1,

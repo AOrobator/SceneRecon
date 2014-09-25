@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.orobator.android.scenerecon.view.activities.HelloOpenCvActivity">
 
-    <org.opencv.android.JavaCameraView
+    <com.orobator.android.scenerecon.view.customviews.SceneReconCameraView
         android:id="@+id/JavaCameraView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -2,23 +2,20 @@ package com.orobator.android.scenerecon.view.activities;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.hardware.Camera;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 
 import com.orobator.android.scenerecon.R;
+import com.orobator.android.scenerecon.view.customviews.SceneReconCameraView;
 
 import org.opencv.android.BaseLoaderCallback;
-import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Mat;
-
-import java.util.List;
 
 public class HelloOpenCvActivity extends Activity implements CvCameraViewListener2 {
     private static final String TAG = "HelloOpenCvActivity";
@@ -28,7 +25,7 @@ public class HelloOpenCvActivity extends Activity implements CvCameraViewListene
             switch (status) {
                 case LoaderCallbackInterface.SUCCESS:
                     Log.i(TAG, "OpenCV loaded successfully");
-                    mOpenCvCameraView.enableView();
+                    sceneReconCameraView.enableView();
                     break;
                 default: {
                     super.onManagerConnected(status);
@@ -37,24 +34,7 @@ public class HelloOpenCvActivity extends Activity implements CvCameraViewListene
             }
         }
     };
-    private CameraBridgeViewBase mOpenCvCameraView;
-
-    /**
-     * A simple algorithm to get the largest size available. For a more robust
-     * version, see CameraPreview.java in the ApiDemos sample app from Android
-     */
-    private Camera.Size getBestSupportedSize(List<Camera.Size> sizes, int width, int height) {
-        Camera.Size bestSize = sizes.get(0);
-        int largestArea = bestSize.width * bestSize.height;
-        for (Camera.Size s : sizes) {
-            int area = s.width * s.height;
-            if (area > largestArea) {
-                bestSize = s;
-                largestArea = area;
-            }
-        }
-        return bestSize;
-    }
+    private SceneReconCameraView sceneReconCameraView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,23 +46,23 @@ public class HelloOpenCvActivity extends Activity implements CvCameraViewListene
 
         setContentView(R.layout.activity_hello_open_cv);
 
-        mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.JavaCameraView);
-        mOpenCvCameraView.setCvCameraViewListener(this);
+        sceneReconCameraView = (SceneReconCameraView) findViewById(R.id.JavaCameraView);
+        sceneReconCameraView.setCvCameraViewListener(this);
 
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (mOpenCvCameraView != null)
-            mOpenCvCameraView.disableView();
+        if (sceneReconCameraView != null)
+            sceneReconCameraView.disableView();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        if (mOpenCvCameraView != null) {
-            mOpenCvCameraView.disableView();
+        if (sceneReconCameraView != null) {
+            sceneReconCameraView.disableView();
         }
 
     }

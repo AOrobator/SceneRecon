@@ -28,16 +28,16 @@ import java.util.List;
  */
 public class JavaCameraView extends CameraBridgeViewBase implements PreviewCallback {
 
-    private static final int MAGIC_TEXTURE_ID = 10;
+    protected static final int MAGIC_TEXTURE_ID = 10;
     private static final String TAG = "JavaCameraView";
     protected Camera mCamera;
     protected JavaCameraFrame[] mCameraFrame;
-    private byte mBuffer[];
-    private Mat[] mFrameChain;
+    protected byte mBuffer[];
+    protected Mat[] mFrameChain;
+    protected SurfaceTexture mSurfaceTexture;
     private int mChainIdx = 0;
     private Thread mThread;
     private boolean mStopThread;
-    private SurfaceTexture mSurfaceTexture;
 
     public JavaCameraView(Context context, int cameraId) {
         super(context, cameraId);
@@ -277,7 +277,7 @@ public class JavaCameraView extends CameraBridgeViewBase implements PreviewCallb
         }
     }
 
-    private class JavaCameraFrame implements CvCameraViewFrame {
+    protected class JavaCameraFrame implements CvCameraViewFrame {
         private Mat mYuvFrameData;
         private Mat mRgba;
         private int mWidth;

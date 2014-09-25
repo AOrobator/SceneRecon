@@ -1,4 +1,3 @@
-
 //
 // This file is auto-generated. Please don't modify it!
 //
@@ -71,8 +70,7 @@ public class DescriptorExtractor {
             OPPONENT_BRIEF = OPPONENTEXTRACTOR + BRIEF,
             OPPONENT_BRISK = OPPONENTEXTRACTOR + BRISK,
             OPPONENT_FREAK = OPPONENTEXTRACTOR + FREAK;
-    private static final int
-            OPPONENTEXTRACTOR = 1000;
+    private static final int OPPONENTEXTRACTOR = 1000;
     protected final long nativeObj;
 
 
